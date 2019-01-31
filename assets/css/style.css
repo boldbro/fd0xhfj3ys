@@ -1,0 +1,323 @@
+*
+{
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body
+{
+	background: #fff;
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4
+{
+	margin:0 0 12px 0;
+	font-family:Arial, sans-serif;
+}
+h1{
+	
+}
+h2{
+	font-size:30px;
+}
+h3{
+	font-size:26px;
+}
+h4{
+	font-size:20px;
+}
+a{
+	color:#09D09D;
+}
+a:hover,
+a:active,
+a:visited{
+	color:#09D09D;
+}
+p
+{
+	margin:0 0 15px 0;
+	font-size: 18px;
+    font-family: georgia;
+	color:#777;
+	line-height:1.6em;
+}
+strong
+{
+	color:#000;
+}
+label
+{
+	font-size:18px;
+	font-family:arial;
+	color:#444;
+	margin:0 0 15px 0;
+}
+
+input[type="text"],
+select
+{
+	padding: 15px;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 16px;
+	width:50%;
+    display: block;
+    margin: 5px 0 15px 0;
+}
+input[type="text"]:focus,
+select:focus
+{
+	outline:none;
+	border:2px solid #dcdcdc
+}
+button,
+.btn
+{
+    background: #454979;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 13px 25px;
+    color: #fff;
+    display: inline-block;
+    width: 50%; 
+    font-size: 18px;
+	cursor:pointer;
+}
+button:hover,
+.btn:hover
+{
+	background:#09d09d;
+}
+table
+{
+	border:1px solid #f0f0f0;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width:50%;
+}
+table tr{
+	border-bottom:1px solid #f5f5f5;
+}
+table tr th {
+    background: #09d09d;
+	border: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+    color: #fff;
+	text-align:center;
+}
+table tr td{
+border: 1px solid #ddd;
+  padding: 8px;
+  text-align:center;
+}
+table tr:nth-child(even)
+{
+	background:#f0f0f0;
+}
+.bold
+{
+	
+}
+.rounded
+{
+	border-radius: 5px;
+}
+.container
+{
+	max-width: 992px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header
+{
+	background:#fff;
+	box-shadow:0 0 3px rgba(0,0,0,.1)
+}
+.brand
+{
+	text-align:center;
+	padding: 25px 0 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+	background:#40414a;
+}
+.brand a
+{
+	font-weight:800;
+	font-family:arial;
+	color:#fff;
+	font-size:26px;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+}
+.brand .brand-box
+{
+	background: #09d09d;
+    color: #fff;
+    
+    padding: 0px 5px;
+}
+.mobile-menu
+{
+	display:none;
+}
+.menu
+{
+	padding:11px;
+	border-bottom:1px solid #f0f0f0;
+}
+.menu ul
+{
+	text-align: center;
+    margin: 0 0 0 -40px;
+}
+.menu ul li
+{
+	display:inline-block;
+	margin: 0 10px;
+}
+.menu ul li a
+{
+	text-decoration:none;
+	font-size: 18px;
+    font-family: arial;
+    color: #444;
+}
+.menu ul li a:hover
+{
+    color: #09D09D;
+}
+.title
+{
+	font-weight: 800;
+    font-family: verdana;
+}
+.calc-wrap
+{
+    margin: 50px auto 30px auto;
+}
+.calc-output
+{
+	background:#edf8ff;
+	color:#4a545a;
+	border:1px solid rgba(0,0,0,.1);
+	padding:15px 15px 0 15px;
+    margin: 30px 0 0 0;
+	width:50%;
+}
+.calc-controls
+{
+	margin:30px 0 0 0;
+}
+.calc-content
+{
+	margin:60px auto 30px auto;
+}
+
+@media screen and (max-width:767px)
+{
+	input[type="text"], select {
+		width: 100%
+		
+	}
+	button, .btn
+	{
+		width:100%;
+	}
+	table
+	{
+		max-width:100%;
+	}
+	.header
+	{
+		position:relative;
+	}
+	.brand
+	{
+	    display: block;
+    padding: 25px 15px 20px 15px;
+    text-align: left;
+	}
+	.brand .brand-box
+	{
+		    padding: 2px 8px 1px 8px;
+	}
+	.brand a {
+		font-size:18px;
+	}
+	.mobile-menu
+	{
+		display:block;
+		position:absolute;
+		right:15px;
+		top:25px;
+	}
+	.mobile-menu a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0;
+	cursor:pointer;
+}
+	.mobile-menu a:hover {
+	cursor:pointer;
+}
+
+	.menu
+	{
+		display:none;
+		padding:0;
+		border:none;
+		transition:all 1s;
+	}
+	.mob-menu
+	{
+		display:block;
+	}
+	.menu ul li {
+    display: block;
+    text-align: left;
+	margin:0;
+	padding: 10px 15px;
+	border-bottom:1px solid #f0f0f0;
+	}
+	.calc-wrap {
+    margin: 2px auto 0px auto;
+    padding: 15px;
+}
+.title
+{
+	    font-size: 19px;
+}
+.calc-controls {
+    margin: 15px 0 0 0;
+}
+.calc-output {
+    margin: 15px 0 0 0;
+	width:100%;
+}
+.calc-content {
+    margin: 20px auto 0 auto;
+}
+.content-box
+{
+	padding:0 15px 15px 15px;
+}
+.content-box h2 {
+    font-size: 22px;
+}
+.content-box h3 {
+    font-size: 18px;
+}
+.content-box h4 {
+    font-size: 16px;
+}
+p,label{
+    font-size: 16px;
+}
+}

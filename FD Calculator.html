@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Meta Tags -->
+<title>FD Calculator | Fixed Deposit Interest Calculator</title>
+<meta name="description" content="Online FD Calculator is a tool for calculating interest on your fixed deposit amount. You can use this FD calculator to calculate interest on any bank FD like HDFC Bank FD calculator, SBI FD calculator  and more.">
+<meta itemprop="name" content="FD Calculator | Fixed Deposit Interest Calculator">
+<meta itemprop="description" content="Online FD Calculator is a tool for calculating interest on your fixed deposit amount. You can use this FD calculator to calculate interest on any bank FD like HDFC Bank FD calculator, SBI FD calculator  and more.">
+<meta itemprop="image" content="">
+<meta property="og:url" content="https://fincalculator.xyz">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FD Calculator | Fixed Deposit Interest Calculator">
+<meta property="og:description" content="Online FD Calculator is a tool for calculating interest on your fixed deposit amount. You can use this FD calculator to calculate interest on any bank FD like HDFC Bank FD calculator, SBI FD calculator  and more.">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FD Calculator | Fixed Deposit Interest Calculator">
+<meta name="twitter:description" content="Online FD Calculator is a tool for calculating interest on your fixed deposit amount. You can use this FD calculator to calculate interest on any bank FD like HDFC Bank FD calculator, SBI FD calculator  and more.">
+<meta name="twitter:image" content="">
+<!-- Meta Tags -->
+<link rel="shortcut icon" href="http://www.iconj.com/ico/h/o/hogw0ek8hm.ico" type="image/x-icon" />
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+<div class="brand"><a href="#"><span class="brand-box rounded">Fin</span> Calculator</a></div>
+<div class="mobile-menu"><a href="#" class="rounded" onclick="mobileMenu('.menu', 'mob-menu')">Menu</a></div>
+<div class="menu">
+<ul>
+<li><a href="#">FD Calculator</a></li>
+<li><a href="#">SIP Calculator</a></li>
+<li><a href="#">RD Calculator</a></li>
+<li><a href="#">PPF Calculator</a></li>
+<li><a href="#">More Calculators</a></li>
+</ul>
+</div>
+</header>
+<section class="calc-wrap fd-calculator container">
+<h1 class="title">FD Calculator</h1>
+<p>Please enter the amount you want to invest, select interest rate, time period for FD and compounding frequency.</p>
+
+<div class="calc-controls">
+<label>Investment Amount
+<input type="text" id="principle" placeholder="Initial Amount">
+</label>
+
+<label>Interest Rate in %
+<input type="text" id="rate" placeholder="7.5">
+</label>
+
+<label>Number of Years
+<input type="text" id="time"  placeholder="1 Year">
+</label>
+
+<label>Compounding Interval
+<select id="compound">
+<option value="12">Monthly</option>
+<option value="4" selected="selected">Quarterly</option>
+<option value="2">Half-Yearly</option>
+<option value="1">Yearly</option>
+</select>
+</label>
+
+<button class="btn rounded" type="button" id="btn" onclick="fdCalc()">Calculate</button>
+<div class="fd-calculator-output calc-output">
+<p><span>Initial Amount - <span id="initial-amount"></span></span></p>
+<p><span>Final Amount Amount - <span id="final-amount"></span></span></p>
+<p><span>Interest Earned - <span id="interest-amount"></span></span></p>
+</div>
+</div>
+
+</section>
+
+
+<section class="calc-stats container">
+</section>
+
+<section class="calc-content container">
+<div class="content-box">
+<h2>Sample H2 heading goes here</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu dapibus magna, eget semper tortor. Aliquam placerat nulla eget iaculis hendrerit. Vivamus sem augue, congue ut enim in, tincidunt mattis sapien. Phasellus euismod accumsan odio eget tristique. Vivamus in ex ex. Proin sagittis tristique neque nec laoreet. Ut quis faucibus tellus. Curabitur id tellus condimentum, placerat est id, pharetra felis. In maximus odio et augue elementum finibus. Nullam varius dapibus tortor eget hendrerit. Duis nec nibh non ex sodales rhoncus. Aenean at ligula ac leo luctus fermentum. In auctor tristique commodo. Maecenas facilisis odio non varius porta. Aliquam eget nisl dolor.</p>
+<h3>Sample H3 heading goes here</h3>
+<p>
+Morbi sed viverra erat. Donec non arcu sagittis, sodales mi sit amet, egestas ante. Aenean vehicula erat non malesuada vulputate. Vivamus velit felis, mattis id dui in, lacinia convallis augue. Praesent in justo at leo molestie interdum non vel risus. Phasellus elit magna, viverra sit amet nisl viverra, tincidunt dignissim ipsum. Quisque lacinia efficitur nibh a efficitur. Nullam consectetur velit sem, eget molestie risus viverra ut. Curabitur ipsum nibh, laoreet nec pharetra eu, faucibus a ipsum. Mauris et nisi tincidunt, tristique tellus at, fringilla est. In malesuada lorem ac iaculis finibus.</p>
+
+<h4>Sample H4 heading goes here</h4>
+<p>
+Suspendisse placerat pharetra elit, in malesuada arcu fringilla eleifend. Curabitur laoreet sed orci id fringilla. Aliquam hendrerit enim leo, eget molestie dolor vestibulum ac. Fusce elementum sem et mi finibus, ac placerat lorem euismod. Aenean velit orci, lobortis quis aliquet tristique, euismod a nulla. Aliquam erat volutpat. Cras purus diam, ultrices quis faucibus vel, volutpat sed lacus. Fusce vitae velit luctus, cursus risus a, porta nulla. Proin egestas eleifend lacus at lobortis. Nullam et sollicitudin ex. Integer quis mauris fermentum, euismod quam quis, vehicula arcu. Praesent tempor molestie justo eu porttitor. Sed pretium ultrices sem a mollis. Maecenas justo enim, lobortis eu rutrum ac, ultrices ut est. Morbi sodales fermentum quam, in vehicula massa eleifend id. Etiam hendrerit auctor lacus, eu pretium purus auctor quis.</p>
+<p>
+<strong> Strong Heading </strong>
+Nam placerat nibh laoreet lectus convallis varius. Aliquam ut suscipit erat, id vehicula massa. Curabitur scelerisque elit congue enim rutrum tincidunt. Suspendisse ac consectetur quam, ac iaculis ligula. Phasellus viverra sed ipsum et tempor. Aenean vitae elit tempus, suscipit velit ut, iaculis tellus. Curabitur quis metus nec nibh hendrerit feugiat. Morbi malesuada dui ac neque varius semper. Ut dignissim, justo quis scelerisque porta, quam tellus dictum massa, vitae bibendum odio nibh bibendum purus. Praesent quis dolor eros. Phasellus rutrum vehicula sem, in dapibus ante faucibus ac. Quisque at est elit. Nullam et elementum nisi, sed commodo mauris.</p>
+<p>
+Etiam auctor elementum libero at feugiat. Etiam volutpat justo et quam rutrum, ut commodo magna volutpat. Etiam sapien tellus, luctus ac enim ac, elementum tincidunt magna. Proin condimentum est erat, ut pellentesque est varius ac. Nulla vitae aliquet elit, interdum maximus ex. Morbi blandit ullamcorper sapien quis dapibus. Pellentesque consequat tortor et elit ornare ornare. Integer aliquam pretium risus vel semper. Quisque pellentesque interdum nulla in sollicitudin. Aenean ligula elit, eleifend vitae ex ut, consectetur feugiat odio. Donec volutpat volutpat dui, efficitur efficitur nisi blandit sed.
+
+</p>
+
+<table>
+	<tr>
+		<th>
+			Bank Name
+		</th>
+		<th>
+			FD Interest rate
+		</th>
+	</tr>
+	<tr>
+		<td>
+			HDFC
+		</td>
+		<td>
+			7.3%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SBI
+		</td>
+		<td>
+			7.5%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			ICICI
+		</td>
+		<td>
+			6.3%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			PNB
+		</td>
+		<td>
+			7.6%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CBI
+		</td>
+		<td>
+			7.3%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Axis
+		</td>
+		<td>
+			6.3%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Canara
+		</td>
+		<td>
+			7.6%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Kotak Bank
+		</td>
+		<td>
+			7.5%
+		</td>
+	</tr>
+</table>
+
+
+
+
+</div>
+</section>
+
+<script>
+function fdCalc(){
+var A="";
+var P="";
+var r="";
+var T="";
+var n="";
+P = parseFloat(document.getElementById("principle").value);
+r = parseFloat(document.getElementById("rate").value);
+t = parseFloat(document.getElementById("time").value);
+n = parseFloat(document.getElementById("compound").value);
+rFinal = r / 100.0;
+A = Math.round(P * (Math.pow(parseFloat(1 + (rFinal/n)), (n * t))));
+document.getElementById("initial-amount").textContent = P;
+document.getElementById("final-amount").textContent = A;
+document.getElementById("interest-amount").textContent = A - P;
+} 
+function mobileMenu(el, className) {
+ var el = document.querySelectorAll(el);
+  
+  for (i = 0; i < el.length; i++) {
+  
+    if (el[i].classList) {
+      el[i].classList.toggle(className);
+    } else {
+        var classes = el[i].className.split(' ');
+        var existingIndex = -1;
+        for (var j = classes.length; j--;) {
+          if (classes[j] === className)
+            existingIndex = j;
+        }
+
+        if (existingIndex >= 0)
+          classes.splice(existingIndex, 1);
+        else
+          classes.push(className);
+
+      el[i].className = classes.join(' ');
+    }
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+   
+   
+
